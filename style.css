@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+select{
+    height:auto !important;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+.navbar-brand{
+    text-align: left;
+    color:rgb(139, 8, 129);
+    float: left;
+    list-style: none;
+    line-height: 90px;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace; 
+    margin-left: -50px;
+}
+
+.privateSchool{
+    text-align: center;
+    color:coral;
+}
+
+.column {
+    float: left;
+    width: 100%;
+    padding: 200%;
+    position: center;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+ 
+.btn{
+    background-color: #4CAF50; 
+    border: none;
+    margin: auto;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration:none;
+    display:inline-flex;
+    font-size: 16px;
+    cursor:pointer;
+    border-radius: 12px;
+    margin-top: 1%;
+}
+.btn1{
+    background-color: rgb(176, 245, 225);
+    border:none;
+    color: blue;
+    padding: 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 11px;
+    cursor:pointer;
+    border-radius: 15px;
+}
+.btn2{
+    background-color: rgb(176, 245, 225);
+    border:none;
+    color: rgb(255, 0, 0);
+    padding: 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 11px;
+    cursor:pointer;
+    border-radius: 15px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(172, 168, 168);
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+nav{
+    display:flex;
+    width: 80;
+    height: 80px;
+    background-image: linear-gradient(#77d6c6,#87afeb);
+    
+}
+
+ul{
+    margin-left: 50px ;
+    float: left;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    float:left;
+    line-height: 90px;
+    
+}
+
+ul li a{
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(249, 252, 255);
+    padding: 0 12px;
+}
+
+ul li a:hover{
+    color:rgb(87, 60, 204);
+}
+table.students{
+    width: 800px;
+    height: 800px;
+}
+.students table, tr, td{
+    background-color: rgb(255, 255, 255);
+}
+
+.students th{
+    text-align: left;
+}
+.students table, th, td{
+    border: 1px solid rgb(139, 225, 231);
+    border-collapse: collapse;
+}
+.students th,td{
+    padding: 1px;
+}
+.students tr:nth-child(even){
+    background-color: rgb(131, 208, 212);
+}
+.students tr:nth-child(odd){
+    background-color: rgb(226, 191, 178);
+}
+table.assignments{
+    width: 800px;
+    height: 800px;
+}
+.assignments table, tr, td{
+    background-color: cadetblue;
+}
+.assignments caption{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color:rgb(206, 27, 27);
+}
+.assignments th{
+    text-align: left;
+}
+.assignments table, th, td{
+    border: 1px solid rgb(213, 148, 233);
+    border-collapse: collapse;
+}
+.assignments th,td{
+    padding: 1px;
+}
+.assignmennts tr:nth-child(even){
+    background-color: rgb(198, 233, 235);
+}
+.assignments tr:nth-child(odd){
+    background-color: rgb(226, 191, 178);
+}
+table.courses{
+    width: 800px;
+    height: 800px;
+}
+.courses table, tr, td{
+    background-color: cadetblue;
+}
+.courses caption{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color:rgb(185, 95, 95);
+}
+.courses th{
+    text-align: left;
+}
+.courses table, th, td{
+    border: 1px solid rgb(213, 148, 233);
+    border-collapse: collapse;
+}
+.courses th,td{
+    padding: 1px;
+}
+.courses tr:nth-child(even){
+    background-color: rgb(198, 233, 235);
+}
+.courses tr:nth-child(odd){
+    background-color: rgb(226, 191, 178);
+}
+table.trainers{
+    width: 800px;
+    height: 800px;
+}
+.trainers table, tr, td{
+    background-color: cadetblue;
+}
+.trainers caption{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color:rgb(185, 95, 95);
+}
+.trainers th{
+    text-align: left;
+}
+.trainers table, th, td{
+    border: 1px solid rgb(213, 148, 233);
+    border-collapse: collapse;
+}
+.trainers th,td{
+    padding: 1px;
+}
+.trainers tr:nth-child(even){
+    background-color: rgb(198, 233, 235);
+}
+.trainers tr:nth-child(odd){
+    background-color: rgb(226, 191, 178);
+}

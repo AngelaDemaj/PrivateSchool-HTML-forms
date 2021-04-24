@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private School-Courses</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="Courses.html">Courses</a></li> 
+            <li><a href="Trainers.html">Trainers</a></li> 
+            <li><a href="Students.html">Students</a></li> 
+            <li><a href="Assignments.html">Assignments</a></li> 
+         </ul>
+    </nav>
+    <table class="courses">
+        <button type="button" id="addCourse" class="btn btn-info add-new"><i class="fa fa-plus"></i>Add New</button>
+        <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Stream</th>
+            <th>Type</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Actions</th>
+          <tr>
+                <td>1</td>
+                <td>Algorithms in .NET</td>
+                <td>C#</td>
+                <td>Part-Time</td>
+                <td>12-10-2020</td>
+                <td>26-5-2021</td>
+                <td>
+                    <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                    <button class="btn2">Update<i class="fa fa-edit"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Functions</td>
+                <td>C#</td>
+                <td>Full-Time</td>
+                <td>2-9-2020</td>
+                <td>6-4-2021</td>
+                <td>
+                    <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                    <button class="btn2">Update<i class="fa fa-edit"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Conditionals</td>
+                <td>Java</td>
+                <td>Part-Time</td>
+                <td>11-9-2020</td>
+                <td>2-6-2021</td>
+                <td>
+                    <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                    <button class="btn2">Update<i class="fa fa-edit"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>My Sql</td>
+                <td>Java</td>
+                <td>Full-Time</td>
+                <td>12-9-2020</td>
+                <td>26-5-2021</td>
+                <td>
+                    <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                    <button class="btn2">Update<i class="fa fa-edit"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Classes</td>
+                <td>C#</td>
+                <td>Part-Time</td>
+                <td>9-10-2020</td>
+                <td>15-4-2021</td>
+                <td>
+                    <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                    <button class="btn2">Update<i class="fa fa-edit"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Loops</td>
+                <td>Java</td>
+                <td>Part-Time</td>
+                <td>2-8-2020</td>
+                <td>8-12-2020</td>
+                <td>
+                    <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                    <button class="btn2">Update<i class="fa fa-edit"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Lists</td>
+                <td>C#</td>
+                <td>Full-Time</td>
+                <td>3-9-2020</td>
+                <td>9-1-2021</td>
+                <td>
+                    <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                    <button class="btn2">Update<i class="fa fa-edit"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Design Patterns</td>
+                <td>Java</td>
+                <td>Part-Time</td>
+                <td>4-10-2020</td>
+                <td>10-2-2021</td>
+                <td>
+                    <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                    <button class="btn2">Update<i class="fa fa-edit"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Html-Css</td>
+                <td>C#</td>
+                <td>Part-Time</td>
+                <td>5-12-2020</td>
+                <td>10-3-2021</td>
+                <td>
+                    <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                    <button class="btn2">Update<i class="fa fa-edit"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Javascript</td>
+                <td>C#</td>
+                <td>Full-Time</td>
+                <td>4-9-2020</td>
+                <td>11-2-2021</td>
+                <td>
+                    <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                    <button class="btn2">Update<i class="fa fa-edit"></i></button>
+                </td>
+            </tr>
+        </tr>
+    </table>
+</body>
+</html>
+<script type="text/javascript">
+    document.getElementById("addCourse").onclick = function () {
+        location.href = "CreateCourse.html";
+    };
+
+    var buttons = document.getElementsByClassName("btn1");
+
+    for (var i=0; i < buttons.length; i++) {
+        buttons[i].onclick = function(){
+            location.href = "EditCourse.html";
+        }
+    };
+
+    let updateButtons = document.getElementsByClassName("btn2");
+
+    for (let i=0; i < updateButtons.length; i++) {
+        updateButtons[i].onclick = function(){
+            location.href = "UpdateCourse.html";
+        }
+    };
+</script>

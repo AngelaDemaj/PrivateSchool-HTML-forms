@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private School-Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleForm.css">
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="Courses.html">Courses</a></li> 
+            <li><a href="Trainers.html">Trainers</a></li> 
+            <li><a href="Students.html">Students</a></li> 
+            <li><a href="Assignments.html">Assignments</a></li> 
+         </ul>
+    </nav>
+        <h2 class="center-align">Create Assignment</h2>
+        <hr/>
+        <div class="main-content">
+        <div class="error" id="emptyInputs"></div>
+    <form action="" id="loginForm" onsubmit="validate(event)">
+
+        <div class="error" id="title"></div>
+        <label for="title">Title: *</label>
+        <input pattern="\D+" type="text" name="title" id="title" required>
+
+        <div class="error" id="description"></div>
+        <label for="description">Description: *</label>
+        <input pattern="\D+" type="text" name="description" id="description" required>
+
+        <div class="error" id="submissionDate"></div>
+        <label for="submissionDate">Submission Date:</label>
+        <input type="date" name="submissionDate" id="submissionDate" required>
+
+        <div class="error" id="oralMark"></div>
+        <label for="oralMark">Oral Mark:</label>
+        <input type="number" min="0" max="25" name="oralMark" id="oralMark" required>
+
+        <div class="error" id="totalMark"></div>
+        <label for="totalMark">Total Mark:</label>
+        <input type="number" min="0" max="75" name="totalMark" id="totalMark" required>
+
+        <div class="error" id="selectCourses"></div>
+        <label for="selectCourses">Courses:</label>
+        <select id="selectCourses" name="selectCourses" required>
+            <option value="">Select an option</option>
+            <option value="Algorithms in .NET">Algorithms in .NET</option>
+            <option value="functions">Functions</option>
+            <option value="conditionals">Conditionals</option>
+            <option value="mysql">My Sql</option>
+            <option value="classes">Classes</option>
+            <option value="loops">Loops</option>
+            <option value="lists">Lists</option>
+            <option value="design patterns">Design Patterns</option>
+            <option value="html css">Html-Css</option>
+            <option value="javascript">Javascript</option>
+        </select>
+
+        <div class="error" id="selectStudents"></div>
+        <label for="selectStudents">Students:</label>
+        <select id="selectStudents" name="selectStudents" multiple>
+            <option value="Ioulia Sahourova">Ioulia Sahourova</option>
+            <option value="Vasilis Kyrikos">Vasilis Kyrikos</option>
+            <option value="George Nafpliotis">George Nafpliotis</option>
+            <option value="Iliana Beikou">Iliana Beikou</option>
+            <option value="Marios Syti">Marios Syti</option>
+            <option value="Angela Demaj">Angela Demaj</option>
+            <option value="Ermis Krouskos">Ermis Krouskos</option>
+            <option value="Triantafyllos Zacharopoulos">Triantafyllos Zacharopoulos</option>
+            <option value="Despoina Salichou">Despoina Salichou</option>
+        </select>
+        
+        <button id="submit" type="submit">Submit</button>
+    </form>
+
+</div>
+
+<footer>
+        <p class="footerMenu">&copy; Coding Bootcamp - Create Assignment Form</p>
+    </footer>
+</body>
+</html

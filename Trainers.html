@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private School-Trainers</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="Courses.html">Courses</a></li> 
+            <li><a href="Trainers.html">Trainers</a></li> 
+            <li><a href="Students.html">Students</a></li> 
+            <li><a href="Assignments.html">Assignments</a></li> 
+         </ul>
+    </nav>
+    <table class="trainers">
+        <button type="button" id="addTrainer" class="btn btn-info add-new"><i class="fa fa-plus"></i>Add New</button>
+        <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th style="width:150px">Subject</th>
+            <th>Actions</th>
+            
+            <tr>
+                <td>1</td>
+                <td>Panos</td>
+                <td>Bozas</td>
+                <td>C#</td>
+                <td>
+                    <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                    <button class="btn2">Update<i class="fa fa-edit"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>George</td>
+                <td>Pasparakis</td>
+                <td>Java</td>
+                <td>
+                    <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                    <button class="btn2">Update<i class="fa fa-edit"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sandra</td>
+                <td>Tyrovola</td>
+                <td>Java</td>
+                <td>
+                    <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                    <button class="btn2">Update<i class="fa fa-edit"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Euthimis</td>
+                <td>Kolovaris</td>
+                <td>Python</td>
+                <td>
+                    <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                    <button class="btn2">Update<i class="fa fa-edit"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Chris</td>
+                <td>Maskinis Siatis</td>
+                <td>Python</td>
+                <td>
+                    <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                    <button class="btn2">Update<i class="fa fa-edit"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Vaggelis</td>
+                <td>Boltsis</td>
+                <td>Java</td>
+                <td>
+                    <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                    <button class="btn2">Update<i class="fa fa-edit"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Eleni</td>
+                <td>Solaki</td>
+                <td>C#</td>
+                <td>
+                    <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                    <button class="btn2">Update<i class="fa fa-edit"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Spiros</td>
+                <td>Stratsianis</td>
+                <td>Java</td>
+                <td>
+                    <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                    <button class="btn2">Update<i class="fa fa-edit"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Maria</td>
+                <td>Kalogirou</td>
+                <td>Python</td>
+                <td>
+                    <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                    <button class="btn2">Update<i class="fa fa-edit"></i></button>
+                </td>
+            </tr>
+            <td>10</td>
+                <td>Eugenia</td>
+                <td>Papadopoulou</td>
+                <td>C#</td>
+                <td>
+                    <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                    <button class="btn2">Update<i class="fa fa-edit"></i></button>
+                </td>
+        </tr>
+    </table>
+</body>
+<script type="text/javascript">
+    document.getElementById("addTrainer").onclick = function () {
+        location.href = "CreateTrainer.html";
+    };
+
+    let buttons = document.getElementsByClassName("btn1");
+
+    for (let i=0; i < buttons.length; i++) {
+        buttons[i].onclick = function(){
+            location.href = "EditTrainer.html";
+        }
+    };
+
+    let updateButtons = document.getElementsByClassName("btn2");
+
+    for (let i=0; i < updateButtons.length; i++) {
+        updateButtons[i].onclick = function(){
+            location.href = "UpdateTrainer.html";
+        }
+    };
+</script>
+</html>

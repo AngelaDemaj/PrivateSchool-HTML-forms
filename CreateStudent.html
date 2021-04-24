@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private School-Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleForm.css">
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="Courses.html">Courses</a></li> 
+            <li><a href="Trainers.html">Trainers</a></li> 
+            <li><a href="Students.html">Students</a></li> 
+            <li><a href="Assignments.html">Assignments</a></li> 
+         </ul>
+    </nav>
+        <h2 class="center-align">Create Student</h2>
+        <hr/>
+        <div class="main-content">
+        <div class="error" id="emptyInputs"></div>
+    <form action="" id="loginForm" onsubmit="validate(event)">
+
+        <div class="error" id="studentFirstName"></div>
+        <label for="studentFirstName">First Name: *</label>
+        <input pattern="\D+" type="text" name="studentFirstName" id="studentFirstName" required>
+
+        <div class="error" id="studentLastName"></div>
+        <label for="studentLastName">Last Name: *</label>
+        <input pattern="\D+" type="text" name="studentLastName" id="studentLastName" required>
+
+        <div class="error" id="dateOfBirth"></div>
+        <label for="dateOfBirth">Date Of Birth:</label>
+        <input type="date" name="dateOfBirth" id="dateOfBirth" required>
+
+        <div class="error" id="tuitionFees"></div>
+        <label for="tuitionFees">Tuition Fees:</label>
+        <input type="number" name="tuitionFees" id="tuitionFees" required>
+        
+        <button id="submit" type="submit">Submit</button>
+    </form>
+
+</div>
+
+<footer>
+        <p class="footerMenu">&copy; Coding Bootcamp - Create Student Form</p>
+    </footer>
+</body>
+</html

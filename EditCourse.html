@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private School-Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleForm.css">
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="Courses.html">Courses</a></li> 
+            <li><a href="Trainers.html">Trainers</a></li> 
+            <li><a href="Students.html">Students</a></li> 
+            <li><a href="Assignments.html">Assignments</a></li> 
+         </ul>
+    </nav>
+        <h2 class="center-align">Edit Course</h2>
+        <hr/>
+        <div class="main-content">
+        <div class="error" id="emptyInputs"></div>
+    <form action="" id="loginForm" onsubmit="validate(event)">
+
+        <div class="error" id="title"></div>
+        <label for="title">Title: *</label>
+        <input pattern="\D+" type="text" name="title" id="title" value="	Functions" required>
+
+        <div class="error" id="stream"></div>
+        <label for="stream">Stream: *</label>
+        <input pattern="\D+" type="text" name="stream" id="stream" value="Python" required>
+
+        <div class="error" id="type"></div>
+        <label for="type">Type: *</label>
+        <input pattern="[a-zA-Z\-]+" type="text" name="type" id="type" value="Part-Time" required>
+
+        <div class="error" id="startDate"></div>
+        <label for="startDate">Start Date:</label>
+        <input type="date" name="startDate" id="startDate" value="2020-10-10" required>
+
+        <div class="error" id="endDate"></div>
+        <label for="endDate">End Date:</label>
+        <input type="date" name="endDate" id="endDate" value="2021-04-04" required>
+
+        <div class="error" id="selectStudents"></div>
+        <label for="selectStudents">Students:</label>
+        <select id="selectStudents" name="selectStudents" multiple>
+            <option value="Ioulia Sahourova" selected>Ioulia Sahourova</option>
+            <option value="Vasilis Kyrikos" selected>Vasilis Kyrikos</option>
+            <option value="George Nafpliotis">George Nafpliotis</option>
+            <option value="Iliana Beikou">Iliana Beikou</option>
+        </select>
+
+        <div class="error" id="selectTrainers"></div>
+        <label for="selectTrainers">Trainers:</label>
+        <select id="selectTrainers" name="selectTrainers" multiple>
+            <option value="Panos Bozas" selected>Panos Bozas</option>
+            <option value="Sandra Tyrovola" selected>Sandra Tyrovola</option>
+            <option value="George Pasparakis">George Pasparakis</option>
+            <option value="Euthimis Kolovaris">Euthimis Kolovaris</option>
+        </select>
+
+        <div class="error" id="selectAssignments"></div>
+        <label for="selectAssignments">Assignments:</label>
+        <select id="selectAssignments" name="selectAssignments" multiple>
+            <option value="MVC" selected>MVC</option>
+            <option value="Web Project" selected>Web Project</option>
+            <option value="Design Patterns">Design Patterns</option>
+            <option value="	Html-Css">Html-Css</option>
+        </select>
+        
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</div>
+
+<footer>
+        <p class="footerMenu">&copy; Coding Bootcamp - Edit Course Form</p>
+    </footer>
+</body>
+</html

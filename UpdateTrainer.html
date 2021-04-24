@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private School-Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleForm.css">
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="Courses.html">Courses</a></li> 
+            <li><a href="Trainers.html">Trainers</a></li> 
+            <li><a href="Students.html">Students</a></li> 
+            <li><a href="Assignments.html">Assignments</a></li> 
+         </ul>
+    </nav>
+        <h2 class="center-align">Update Trainer</h2>
+        <hr/>
+        <div class="main-content">
+        <div class="error" id="emptyInputs"></div>
+    <form action="" id="loginForm" onsubmit="validate(event)">
+
+        <div class="error" id="trainerFirstName"></div>
+        <label for="trainerFirstName">First Name: *</label>
+        <input pattern="\D+" type="text" name="trainerFirstName" id="trainerFirstName" value="Panos" required>
+
+        <div class="error" id="trainerLastName"></div>
+        <label for="trainerLastName">Last Name: *</label>
+        <input pattern="\D+" type="text" name="trainerLastName" id="trainerLastName" value="Bozas" required>
+
+        <div class="error" id="subject"></div>
+        <label for="subject">Subject: *</label>
+        <input type="text" name="subject" id="subject" value="C#" required>
+
+        <div class="error" id="selectCourses"></div>
+        <label for="selectCourses">Courses: *</label>
+        <select id="selectCourses" name="selectCourses" required>
+            <option value="c#" selected>C#</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+        </select>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+
+</div>
+
+<footer>
+        <p class="footerMenu">&copy; Coding Bootcamp - Update Trainer Form</p>
+    </footer>
+</body>
+</html

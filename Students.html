@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private School-Students</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Courses.html">Courses</a></li>
+            <li><a href="Trainers.html">Trainers</a></li>
+            <li><a href="Students.html">Students</a></li>
+            <li><a href="Assignments.html">Assignments</a></li>
+        </ul>
+    </nav>
+    <table class="students">
+            <button type="button" id="addStudent" class="btn btn-info add-new"><i class="fa fa-plus"></i>Add New</button>
+        <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Date Of Birth</th>
+            <th>Tuition Fees</th>
+            <th>Actions</th>
+        <tr>
+            <td>1</td>
+            <td>Ioulia</td>
+            <td>Sahourova</td>
+            <td>12-10-1992</td>
+            <td>5000</td>
+            <td>
+                <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                <button class="btn2">Update<i class="fa fa-edit"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Vasilis</td>
+            <td>Kyrikos</td>
+            <td>16-5-1980</td>
+            <td>3000</td>
+            <td>
+                <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                <button class="btn2">Update<i class="fa fa-edit"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>George</td>
+            <td>Nafpliotis</td>
+            <td>11-9-1998</td>
+            <td>3000</td>
+            <td>
+                <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                <button class="btn2">Update<i class="fa fa-edit"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Ilianna</td>
+            <td>Beikou</td>
+            <td>12-10-1995</td>
+            <td>2000</td>
+            <td>
+                <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                <button class="btn2">Update<i class="fa fa-edit"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Marios</td>
+            <td>Syti</td>
+            <td>2-8-1986</td>
+            <td>3500</td>
+            <td>
+                <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                <button class="btn2">Update<i class="fa fa-edit"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Angela</td>
+            <td>Demaj</td>
+            <td>3-9-1996</td>
+            <td>4000</td>
+            <td>
+                <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                <button class="btn2">Update<i class="fa fa-edit"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Ermis</td>
+            <td>Krouskos</td>
+            <td>4-10-1993</td>
+            <td>2000</td>
+            <td>
+                <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                <button class="btn2">Update<i class="fa fa-edit"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Hlias</td>
+            <td>Tsoukalas</td>
+            <td>5-9-1975</td>
+            <td>4500</td>
+            <td>
+                <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                <button class="btn2">Update<i class="fa fa-edit"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Triantafyllos</td>
+            <td>Zacharopoulos</td>
+            <td>15-10-1986</td>
+            <td>3500</td>
+            <td>
+                <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                <button class="btn2">Update<i class="fa fa-edit"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Despoina</td>
+            <td>Salichou</td>
+            <td>16-11-1995</td>
+            <td>4000</td>
+            <td>
+                <button class="btn1">Edit<i class="fa fa-edit"></i></button>
+                <button class="btn2">Update<i class="fa fa-edit"></i></button>
+            </td>
+        </tr>
+        </tr>
+    </table>
+</body>
+<script type="text/javascript">
+    document.getElementById("addStudent").onclick = function () {
+        location.href = "CreateStudent.html";
+    };
+
+    let buttons = document.getElementsByClassName("btn1");
+
+    for (let i=0; i < buttons.length; i++) {
+        buttons[i].onclick = function(){
+            location.href = "EditStudent.html";
+        }
+    };
+
+    let updateButtons = document.getElementsByClassName("btn2");
+
+    for (let i=0; i < updateButtons.length; i++) {
+        updateButtons[i].onclick = function(){
+            location.href = "UpdateStudent.html";
+        }
+    };
+</script>
+</html>
